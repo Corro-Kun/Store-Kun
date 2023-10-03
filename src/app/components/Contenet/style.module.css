@@ -1,0 +1,13 @@
+.Main{
+    height: 80%;
+}
+.Contenet{
+    display: flex;
+    margin-top: 20px;
+    height: 80%;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.Title{
+    margin: 10px 0;
+}

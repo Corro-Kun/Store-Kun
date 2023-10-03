@@ -1,0 +1,26 @@
+.Bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ContenetBar{
+    width: 30%;
+}
+.ContenetBar input{
+    padding: 10px;
+    height: 30px;
+    width: 100%;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.Logo{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+.Logo img{
+    height: 50px;
+    width: 50px;
+}

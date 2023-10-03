@@ -1,0 +1,13 @@
+:root{
+    --Color_Primary: #EEEEEE;
+    --Color_Text: #000000;
+    --Color_Main: #068FFF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Color_Primary) ;
+}
