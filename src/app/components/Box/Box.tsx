@@ -1,18 +1,20 @@
 import Style from "./style.module.css"
-import Image from "next/image"
+import Link from "next/link"
 
-export default function Box() {
+export default function Box({title, description, platform, image, price, id}:any) {
     return(
-        <div className={Style.Box} >
-            <img src="https://www.clara.es/medio/2021/12/16/que-comer-hoy-ideas_21beeb02_1200x630.jpg" alt="" />
-            <div>
-                <h2>Nombre del producto</h2>
-                <p>descripcion general de lo que es el producto que esta en esta pagina</p>
+        <Link href={"/software/"+ id} className={Style.TextD} >
+            <div className={Style.Box} >
+                <img src="https://www.clara.es/medio/2021/12/16/que-comer-hoy-ideas_21beeb02_1200x630.jpg" alt="" />
+                <div>
+                    <h2>{title}</h2>
+                    <p>{description}</p>
+                </div>
+                <div className={Style.Render} >
+                    <h3>{platform}</h3>
+                    <h3>{price}</h3>
+                </div>
             </div>
-            <div className={Style.Render} >
-                <h3>Plataforma</h3>
-                <h3>free</h3>
-            </div>
-        </div>
+        </Link>
     );
 }

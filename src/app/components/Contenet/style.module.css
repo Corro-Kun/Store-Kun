@@ -3,11 +3,31 @@
 }
 .Contenet{
     display: flex;
-    margin-top: 20px;
-    height: 80%;
+    margin: 20px 0;
+    height: 117%;
     flex-wrap: wrap;
     gap: 40px;
 }
 .Title{
     margin: 10px 0;
+}
+.Pages{
+    padding: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Pages button{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border: 1px solid #000;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+.Pages button:hover{
+    background-color: #000;
+    color: #fff;
 }
