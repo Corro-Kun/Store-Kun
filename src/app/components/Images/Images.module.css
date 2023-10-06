@@ -1,0 +1,32 @@
+.ImagesDivMain{
+    display: flex;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+}
+.ImagesDivMain button{
+    padding: 8px 10px 8px 10px;
+    background-color: var(--Color_Main);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+.ImagesDivMain button:hover{
+    background-color: black;
+}
+.ImagesDivMain div{
+    width: 525px;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.ImagesDivMain div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

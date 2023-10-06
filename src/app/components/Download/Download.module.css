@@ -1,0 +1,18 @@
+.DownloadMain{
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.DownloadMain a{
+    text-decoration: none;
+}
+.DownloadMain button{
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: var(--Color_Main);
+    cursor: pointer;
+}
