@@ -3,7 +3,7 @@ import Style from "./style.module.css"
 
 
 function FetchData() {
-    return fetch('http://localhost:3000/api/list')
+    return fetch('https://store-kun.vercel.app/api/list')
         .then(response => response.json())
         .catch(err => console.log(err));
 }
