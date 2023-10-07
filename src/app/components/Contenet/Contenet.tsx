@@ -4,7 +4,8 @@ import Style from "./style.module.css"
 
 function FetchData() {
     return fetch('http://localhost:3000/api/list')
-        .then(response => response.json());
+        .then(response => response.json())
+        .catch(err => console.log(err));
 }
 interface Product{
     id: number,
@@ -21,15 +22,16 @@ export default async function Content() {
             <h2 className={Style.Title} >Programas</h2>
             <div className={Style.Contenet}>
                 {
+                    datas && datas.length > 0 ? 
                     datas.map((item,i) => <Box
-                    id={item.id} 
-                    title={item.title} 
-                    description={item.description}
-                    platform={item.platform}
-                    image={item.image}
-                    price={item.price}
-                    key={i} 
-                    /> )
+                        id={item.id} 
+                        title={item.title} 
+                        description={item.description}
+                        platform={item.platform}
+                        image={item.image}
+                        price={item.price}
+                        key={i} 
+                    /> ) : "No hay datos"
                 }
             </div>
             <div className={Style.Pages} >

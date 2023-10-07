@@ -6,7 +6,8 @@ import Info from "@/app/components/info/Info";
 
 function FetchData(id: number){
     return fetch(`http://localhost:3000/api/product/${id}`)
-        .then(response => response.json());
+        .then(response => response.json())
+        .catch(err => console.log(err));
 }
 
 interface Product{
