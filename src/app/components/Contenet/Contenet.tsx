@@ -3,7 +3,7 @@ import Style from "./style.module.css"
 
 
 function FetchData() {
-    return fetch('api/list')
+    return fetch('http://localhost:3000/api/list')
         .then(response => response.json());
 }
 interface Product{

@@ -5,7 +5,7 @@ import Type from "@/app/components/Type/Type";
 import Info from "@/app/components/info/Info";
 
 function FetchData(id: number){
-    return fetch(`api/product/${id}`)
+    return fetch(`http://localhost:3000/api/product/${id}`)
         .then(response => response.json());
 }
 
